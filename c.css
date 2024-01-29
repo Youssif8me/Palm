@@ -149,7 +149,7 @@ nav .logo {
     text-align: center;
     font-size: 60px;
     color: #701920;
-    background: linear-gradient(45deg, #701920, #EFD4A5);
+    background: linear-gradient(211deg, #EFD4A5, #EFD4A5);
     padding-top: 10px;
 }
 
@@ -168,6 +168,7 @@ nav .logo {
     padding-bottom: 100px;
     position: relative;
     background: linear-gradient(100deg,#701920,#EFD4A5);
+    padding-top: 20px;
 }
 
 .projects .card{
@@ -240,8 +241,8 @@ nav .logo {
     font-size: 60px;
     color: #EFD4A5;
     background-color: #701920;
-    padding-top: 100px;
-    padding-bottom: 1px;
+    padding-top: 50px;
+    padding-bottom: 54px;
 }
 
 .Contact {
