@@ -145,12 +145,22 @@ nav .logo {
     position: relative;
 }
 
+.head h1 span::before{
+    content: '';
+    position: absolute;
+    background-color: #EFD4A5;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+}
+
 .t1{
     text-align: center;
     font-size: 60px;
     color: #701920;
-    background-color: #EFD4A5;
-    padding-bottom: 100px;
+    background: linear-gradient(45deg, #701920, #EFD4A5);
+    padding-top: 10px;
 }
 
 .projects{
@@ -167,13 +177,12 @@ nav .logo {
     width: 100%;
     padding-bottom: 100px;
     position: relative;
-    background-color: #EFD4A5;
+    background: linear-gradient(100deg,#701920,#EFD4A5);
 }
 
 .projects .card{
-    width: 300px;
+    width: 100%;
     height: 300px;
-    background-color: #ccc;
     text-align: center;
 }
 
@@ -184,9 +193,8 @@ nav .logo {
 }
 
 .projects .card img{
-    width: 300px;
-    border-radius: 50%;
-    border: 10px solid #000;
+    width: 100%;
+    border-radius: 20px;
 }
 
 @media (max-width: 1500px){ 
@@ -198,6 +206,24 @@ nav .logo {
     .center {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         height: 400px;
+    }
+    .projects .card img {
+        width: 70%;
+    }
+}
+@media (min-width: 1000px){ 
+    .projects .card img {
+        width: 55%;
+    }
+    .center {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        height: 300px;
+    }
+}
+
+@media (max-width: 780px){ 
+    .projects .card img{ 
+        width: 60%;
     }
 }
 
